@@ -1,0 +1,61 @@
+name = input("Enter your name: ")
+
+caesar_cipher = ""
+
+for x in range(len(name)):
+    char = name[x]
+    if char == "a":
+        caesar_cipher += "B"
+    elif char == "b":
+        caesar_cipher += "C"
+    elif char == "c":
+        caesar_cipher += "D"
+    elif char == "d":
+        caesar_cipher += "E"
+    elif char == "e":
+        caesar_cipher += "F"
+    elif char == "f":
+        caesar_cipher += "G"
+    elif char == "g":
+        caesar_cipher += "H"
+    elif char == "h":
+        caesar_cipher += "I"
+    elif char == "i":
+        caesar_cipher += "J"
+    elif char == "j":
+        caesar_cipher += "K"
+    elif char == "k":
+        caesar_cipher += "L"
+    elif char == "l":
+        caesar_cipher += "M"
+    elif char == "m":
+        caesar_cipher += "N"
+    elif char == "n":
+        caesar_cipher += "O"
+    elif char == "o":
+        caesar_cipher += "P"
+    elif char == "p":
+        caesar_cipher += "Q"
+    elif char == "q":
+        caesar_cipher += "R"
+    elif char == "r":
+        caesar_cipher += "S"
+    elif char == "s":
+        caesar_cipher += "T"
+    elif char == "t":
+        caesar_cipher += "U"
+    elif char == "u":
+        caesar_cipher += "V"
+    elif char == "v":
+        caesar_cipher += "W"
+    elif char == "w":
+        caesar_cipher += "X"
+    elif char == "x":
+        caesar_cipher += "Y"
+    elif char == "y":
+        caesar_cipher += "Z"
+    elif char == "z":
+        caesar_cipher += "A"
+    else:
+        caesar_cipher += char
+print(caesar_cipher)

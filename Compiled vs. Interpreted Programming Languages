@@ -1,0 +1,58 @@
+The difference between an interpreted and a compiled language lies in the result of
+the process of interpreting or compiling. An interpreter produces a result from a
+program, while a compiler produces a program written in assembly language. The
+assembler of architecture then turns the resulting program into binary code.
+Assembly language varies for each individual computer, depending upon its
+architecture. Consequently, compiled programs can only run on computers that have
+the same architecture as the computer on which they were compiled.
+A compiled program is not human readable, but instead is in an architecture-specific
+machine language. Creating a compiled program requires several steps. First, the
+programmer, using a development tool or even a simple text editor, writes the source
+code in a chosen computer language. If the program is complex, pieces of it may be
+spread across several files. The programmer then compiles the program, sorting and
+linking the modules and translating it all into machine code that the computer
+understands.
+What Is a Compiled Language?
+#include
+int main()
+{
+      printf(&quot;Hello World&quot;);
+}
+The above is a very simple example of a program written in the C programming
+language.
+C is an example of a compiled language. In order to run the above code, we need to
+run it through a C compiler.
+Generally, to do this, run the following command in Linux:
+gcc helloworld.c -o hello
+The above command turns the code from human-readable format into machine code
+that the computer can run natively.
+&quot;gcc&quot; is itself a compiled program (gnu c compiler). 
+A compiled program can be run simply by running the name of the program as
+follows:
+ ./hello
+The benefits of using a compiler to compile code is that it generally runs faster than
+interpreted code as it doesn&#39;t need to work it out on the fly as the application is
+running. 
+
+The compiled program has also been checked for errors whilst it is being compiled. If
+there are any commands that the compiler doesn&#39;t like then they will be reported.
+This will enable you to fix all coding errors before getting a fully running program.
+Just because a program has compiled successfully doesn&#39;t mean that it will logically
+run the way you expect it to so you still need to test your application.
+Rarely is anything ever perfect, however. If we have a C program compiled on
+our Linux computer we cannot copy that compiled program to our Windows
+computer and expect the executable to run.
+In order to get the same C program to run on our Windows computer, we will need to
+compile the program again using a C compiler on a Windows computer.
+What Is an Interpreted Language?
+print (&quot;hello world&quot;)
+The above code is a python program which will display the words &quot;hello world&quot; when
+it is run.
+To run the code we do not need to compile it first. Instead, we can simply run the
+following command:
+python helloworld.py
+The above code does not need to be compiled first but it does require that python is
+installed on any machine that needs to run the script.
+The python interpreter takes the human-readable code and turns it into something
+else before making it something the machine can read. All of this happens behind
+the scenes and as a user, all you will see are the words &quot;hello world&quot;.
